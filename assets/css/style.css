@@ -60,7 +60,7 @@ body{
 }
 
 .icon {
-    width: 25px;
+    width: 30px;
 }
 
 .main {
@@ -75,9 +75,10 @@ body{
     height: 100%;
     padding: 8px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
     margin: auto;
-    background-color: var(--highlight-color-one);
+    background-color: var(--secondary-dark-color);
+    border-radius: 5%;
 }
 
 .personality {
@@ -88,7 +89,7 @@ body{
 
 .personality__photo{
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     align-items: center;
     border-radius: 30%;
     box-shadow: 25px 25px 50px var(--secondary-dark-color);
@@ -103,9 +104,9 @@ body{
     font-family: var(--secondary-font);
 }
 .personality__text{
-    color: var(--secondary-dark-color);
+    color: var(--highlight-color-one);
     margin: 0 5%;
-    font-size: 16px;
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -146,12 +147,13 @@ body{
 }
 
 .section__title {
-    font-size: 40px;
+    font-family: var(--secondary-font);
+    font-size: 38px;
     font-weight: 400;
-    color: var(--highlight-color-one);
+    color: var(--highlight-color-two);
     text-align: center;
     background-color: var(--secondary-dark-color);
-    border-radius: 100px;
+    border-radius: 80px;
     margin: 5%;
 }
 
@@ -248,10 +250,15 @@ body{
 
 @media screen and (max-width: 768px) {
 
+    body{
+        display: block;
+
+    }
+
     .header{
-        width:fit-content;
+        display:flex;
         flex-direction: column;
-        align-self:center;
+        align-self: center;
         align-items: center;
         text-align: center;
         margin: 0;
